@@ -33,3 +33,9 @@ def test_double_number_success():
         "success": True,
         "result": 10
     }
+
+def test_double_invalid_input():
+    result = execute_tool("double", "abc")
+
+    assert result["success"] is False
+    assert "error" in result
