@@ -15,3 +15,12 @@ def test_execute_tool():
 
     assert response.status_code == 200
     assert response.json() == {"success": True, "result": 10}
+
+#写一个自动化测试行为
+def test_execute_tool_missing_argument():
+    response = client.post(
+        "/tools/execute",
+        json={"tool_name": "double"})
+
+    assert response.status_code == 422
+    

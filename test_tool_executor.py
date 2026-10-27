@@ -35,7 +35,7 @@ def test_double_number_success():
     }
 
 def test_double_invalid_input():
-    result = execute_tool("double", "abc")
-
-    assert result["success"] is False
-    assert "error" in result
+    assert execute_tool("double", "abc") == {
+        "success":False,
+        "error": "invalid literal for int() with base 10: 'abc'"
+    }
