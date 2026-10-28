@@ -17,13 +17,18 @@ def search(query):
         "result": "模拟搜索结果：" + query
     }
 
-def double_number(value):
-    number = int (value)
-    return{
-        "success": True,
-        "result": number * 2
-    }
-
+def double_number(value): 
+    try:
+        number = int(value)
+        return {
+            "success": True,
+            "result": number * 2
+        }
+    except ValueError as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
 
 tools = {
     "calculator": calculate_square,

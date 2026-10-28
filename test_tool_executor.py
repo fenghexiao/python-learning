@@ -1,12 +1,16 @@
 from tool_executor import execute_tool
+import pytest
 
-
-def test_calculator_success():
-    assert execute_tool("calculator", "5") == {
+@pytest.mark.parametrize("value, expected", [
+    ("2", 4),
+    ("5", 25),
+    ("10", 100),
+])
+def test_calculator(value,expected):
+    assert execute_tool("calculator", value) == {
         "success": True,
-        "result": 25
+        "result": expected
     }
-
 
 def test_calculator_invalid_input():
     assert execute_tool("calculator", "abc") == {
