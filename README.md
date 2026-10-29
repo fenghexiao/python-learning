@@ -15,7 +15,8 @@ Python 学习与练习代码，包含 pytest 单元测试和一个基于 FastAPI
 | `test_tool_executor.py` | 工具执行器测试 |
 | `test_app.py` | FastAPI 接口测试（TestClient） |
 | `typed_models_practice.py` | 类型标注练习：`create_order()`、`get_payment_status()`，演示标注不做运行时校验 |
-| `models_practice.py` | Pydantic 练习：`Order` 模型 + 三类 `ValidationError`（类型错、越界、缺字段） |
+| `models_practice.py` | Pydantic 练习：`Order` 模型 + `ValidationError`（类型错、越界、缺字段、空订单号） |
+| `test_models_practice.py` | `Order` 模型测试：`pytest.raises`、`parametrize`、`fixture` |
 | `practice/` | 早期练习归档（`lesson2_tool_filter.py`、`lesson7_tool_executor.py`） |
 
 ## 环境准备
