@@ -17,6 +17,7 @@ Python 学习与练习代码，包含 pytest 单元测试和一个基于 FastAPI
 | `typed_models_practice.py` | 类型标注练习：`create_order()`、`get_payment_status()`，演示标注不做运行时校验 |
 | `models_practice.py` | Pydantic 练习：`Order` / `GetOrderArgs` / `CreateTicketArgs` / `ToolCall`，含 `ValidationError` 演示 |
 | `test_models_practice.py` | `Order` 模型测试：`pytest.raises`、`parametrize`、`fixture` |
+| `sqlite_practice.py` | SQLite 入门：内存数据库连接、`CREATE TABLE orders`、关闭连接 |
 | `practice/` | 早期练习归档（`lesson2_tool_filter.py`、`lesson7_tool_executor.py`） |
 
 ## 环境准备
