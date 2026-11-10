@@ -13,6 +13,11 @@ htmlcov/
 venv/
 env/
 
+# SQLite 运行时数据库文件（由代码重建，不入库）
+*.db
+*.db-shm
+*.db-wal
+
 # Editor / OS
 .vscode/
 .idea/
